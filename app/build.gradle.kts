@@ -72,7 +72,4 @@ dependencies {
     implementation(DependenciesConfig.APP_COMPAT)
     implementation(DependenciesConfig.MATERIAL)
     implementation(DependenciesConfig.CONSTRAINT_LAYOUT)
-    testImplementation("junit:junit:4.+")
-    androidTestImplementation("androidx.test.ext:junit:1.1.2")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
 }
