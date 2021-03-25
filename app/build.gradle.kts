@@ -48,9 +48,9 @@ android {
         outputs.all {
             //输出APK
             if (this is com.android.build.gradle.internal.api.ApkVariantOutputImpl) {
-                if (buildType == "release") {
-                    this.outputFileName = "Mo_V${defaultConfig.versionName}_$buildType.apk"
-                }
+//                if (buildType == "release") {
+                    this.outputFileName = "Mo_V${defaultConfig.versionName}_${Deploy.getSystemTime()}_$buildType.apk"
+//                }
             }
         }
     }
