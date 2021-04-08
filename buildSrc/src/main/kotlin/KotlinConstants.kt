@@ -39,9 +39,19 @@ object DependenciesConfig {
     //Android标准库
     const val APP_COMPAT = "androidx.appcompat:appcompat:1.2.0"
 
+    //material
     const val MATERIAL = "com.google.android.material:material:1.3.0"
 
+    //约束布局
     const val CONSTRAINT_LAYOUT ="androidx.constraintlayout:constraintlayout:2.0.4"
+
+    //EventBus
+    const val EVENT_BUS = "org.greenrobot:eventbus:3.2.0"
+
+    //ARouter
+    const val AROUTER = "com.alibaba:arouter-api:1.5.1"
+    const val AROUTER_COMPILER = "com.alibaba:arouter-compiler:1.5.1"
+
 }
 
 //Module配置
@@ -49,4 +59,14 @@ object ModuleConfig{
 
     //是否App
      var isApp = true
+
+    //包名
+    const val MODULE_APP_MANAGER = "com.ww.mo.module_app_manager"
+    const val MODULE_CONSTELLATION = "com.ww.mo.module_constellation"
+    const val MODULE_DEVELOPER = "com.ww.mo.module_developer"
+    const val MODULE_JOKE = "com.ww.mo.module_joke"
+    const val MODULE_MAP = "com.ww.mo.module_map"
+    const val MODULE_SETTING = "com.ww.mo.module_setting"
+    const val MODULE_VOICE_SETTING = "com.ww.mo.module_voice_setting"
+    const val MODULE_WEATHER = "com.ww.mo.module_weather"
 }

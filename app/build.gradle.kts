@@ -1,7 +1,8 @@
 //引用插件
 plugins {
     id("com.android.application")
-    id("kotlin-android")
+    kotlin("android")
+    kotlin("kapt")
 }
 //Android属性
 android {
@@ -13,7 +14,12 @@ android {
         versionCode = AppConfig.versionCode
         versionName = AppConfig.versionName
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        //ARouter
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.name)
+            }
+        }
     }
     //签名配置
     signingConfigs {
@@ -28,6 +34,7 @@ android {
             storePassword = "mo20191110"
         }
     }
+
     //编译类型
     buildTypes {
         getByName("debug") {
@@ -35,12 +42,15 @@ android {
         }
         getByName("release") {
             isMinifyEnabled = false
+            //自动签名打包
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
     }
+
     //输出类型
     android.applicationVariants.all {
         //编译类型
@@ -60,6 +70,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -67,13 +78,8 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation(DependenciesConfig.STD_LIB)
-    implementation(DependenciesConfig.KTX_CORE)
-    implementation(DependenciesConfig.APP_COMPAT)
-    implementation(DependenciesConfig.MATERIAL)
-    implementation(DependenciesConfig.CONSTRAINT_LAYOUT)
-
     implementation (project(":lib_base"))
+
     if(!ModuleConfig.isApp){
         implementation(":module_weather")
         implementation(":module_voice_setting")
@@ -87,7 +93,8 @@ dependencies {
         implementation(":lib_network")
         implementation(":lib_base")
         implementation(":app")
-    }else{
-
     }
+
+    //运行时注解
+    kapt(DependenciesConfig.AROUTER_COMPILER)
 }

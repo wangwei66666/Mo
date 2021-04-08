@@ -1,6 +1,6 @@
 plugins {
     id ("com.android.library")
-    id ("kotlin-android")
+    kotlin("android")
 }
 
 android {
@@ -11,18 +11,16 @@ android {
         targetSdkVersion (AppConfig.targetSdkVersion)
         versionCode = AppConfig.versionCode
         versionName = AppConfig.versionName
-
-//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-//        consumerProguardFiles "consumer-rules.pro"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
-//        getByName("debug") {
-//
-//        }
-//        getByName("release") {
-//            isMinifyEnabled = false
-//        }
+        getByName("debug") {
+
+        }
+        getByName("release") {
+            isMinifyEnabled = false
+        }
     }
     //依赖操作
     compileOptions {
@@ -35,14 +33,22 @@ android {
 }
 
 dependencies {
+    api(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+
     //Kotlin标准库
     api(DependenciesConfig.STD_LIB)
     //Kotlin核心库
-    implementation(DependenciesConfig.KTX_CORE)
+    api(DependenciesConfig.KTX_CORE)
     //Android标准库
-    implementation(DependenciesConfig.APP_COMPAT)
+    api(DependenciesConfig.APP_COMPAT)
     //MATERIAL
-    implementation(DependenciesConfig.MATERIAL)
+    api(DependenciesConfig.MATERIAL)
+    //约束布局
+    api(DependenciesConfig.CONSTRAINT_LAYOUT)
+    //EventBus
+    api(DependenciesConfig.EVENT_BUS)
+    //ARouter
+    api(DependenciesConfig.AROUTER)
 
     api (project(":lib_voice"))
     api (project(":lib_network"))
