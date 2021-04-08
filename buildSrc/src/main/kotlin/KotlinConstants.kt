@@ -42,6 +42,11 @@ object DependenciesConfig {
     const val MATERIAL = "com.google.android.material:material:1.3.0"
 
     const val CONSTRAINT_LAYOUT ="androidx.constraintlayout:constraintlayout:2.0.4"
+}
 
+//Module配置
+object ModuleConfig{
 
+    //是否App
+     var isApp = true
 }

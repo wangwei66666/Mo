@@ -35,8 +35,15 @@ android {
 }
 
 dependencies {
-    implementation(DependenciesConfig.STD_LIB)
+    //Kotlin标准库
+    api(DependenciesConfig.STD_LIB)
+    //Kotlin核心库
     implementation(DependenciesConfig.KTX_CORE)
+    //Android标准库
     implementation(DependenciesConfig.APP_COMPAT)
+    //MATERIAL
     implementation(DependenciesConfig.MATERIAL)
+
+    api (project(":lib_voice"))
+    api (project(":lib_network"))
 }
