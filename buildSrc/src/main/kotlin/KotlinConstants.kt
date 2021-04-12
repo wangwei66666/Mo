@@ -48,6 +48,9 @@ object DependenciesConfig {
     //EventBus
     const val EVENT_BUS = "org.greenrobot:eventbus:3.2.0"
 
+    //lottie
+    const val LOTTIE = "com.airbnb.android:lottie:3.7.0"
+
     //ARouter
     const val AROUTER = "com.alibaba:arouter-api:1.5.1"
     const val AROUTER_COMPILER = "com.alibaba:arouter-compiler:1.5.1"

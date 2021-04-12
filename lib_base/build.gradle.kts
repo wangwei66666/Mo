@@ -49,6 +49,8 @@ dependencies {
     api(DependenciesConfig.EVENT_BUS)
     //ARouter
     api(DependenciesConfig.AROUTER)
+    //LOTTIE
+    api(DependenciesConfig.LOTTIE)
 
     api (project(":lib_voice"))
     api (project(":lib_network"))
