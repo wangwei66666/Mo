@@ -1,3 +1,4 @@
+include(":module_study")
 include(":module_setting")
 include(":module_developer")
 include(":module_app_manager")

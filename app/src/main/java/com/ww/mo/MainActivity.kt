@@ -1,16 +1,20 @@
 package com.ww.mo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.airbnb.lottie.LottieAnimationView
+import com.ww.mo.databinding.ActivityMainBinding
+import com.ww.module_study.StudyActivity
 
 class MainActivity : AppCompatActivity() {
-    var lottieAnimation:LottieAnimationView?= null
+
+    private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        lottieAnimation = findViewById(R.id.animation_view)
-//        lottieAnimation?.speed  = 2.5f
-//        lottieAnimation?.pauseAnimation()
+        setContentView(binding.root)
+        binding.lottieAnimation.speed = 1.5f
+        binding.btnJetpack.setOnClickListener {
+            startActivity(Intent(this,StudyActivity::class.java))
+        }
     }
 }

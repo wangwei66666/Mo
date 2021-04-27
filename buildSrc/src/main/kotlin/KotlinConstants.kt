@@ -61,7 +61,7 @@ object DependenciesConfig {
 object ModuleConfig{
 
     //是否App
-     var isApp = true
+     var isApp = false
 
     //包名
     const val MODULE_APP_MANAGER = "com.ww.mo.module_app_manager"

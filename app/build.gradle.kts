@@ -74,19 +74,24 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+   buildFeatures {
+       viewBinding = true
+       dataBinding = true
+   }
+
 }
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation (project(":lib_base"))
-
     if(!ModuleConfig.isApp){
-        implementation(":module_setting")
-        implementation(":module_developer")
-        implementation(":module_app_manager")
-        implementation(":lib_network")
-        implementation(":lib_base")
-        implementation(":app")
+        implementation(project(":module_study"))
+        implementation(project(":module_setting"))
+        implementation(project(":module_developer"))
+        implementation(project(":module_app_manager"))
+        implementation(project(":lib_network"))
+        implementation(project(":lib_base"))
     }
 
     //运行时注解
