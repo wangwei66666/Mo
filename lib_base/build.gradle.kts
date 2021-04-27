@@ -52,6 +52,5 @@ dependencies {
     //LOTTIE
     api(DependenciesConfig.LOTTIE)
 
-    api (project(":lib_voice"))
     api (project(":lib_network"))
 }

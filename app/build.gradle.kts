@@ -81,15 +81,9 @@ dependencies {
     implementation (project(":lib_base"))
 
     if(!ModuleConfig.isApp){
-        implementation(":module_weather")
-        implementation(":module_voice_setting")
         implementation(":module_setting")
-        implementation(":module_map")
         implementation(":module_developer")
-        implementation(":module_constellation")
         implementation(":module_app_manager")
-        implementation(":module_joke")
-        implementation(":lib_voice")
         implementation(":lib_network")
         implementation(":lib_base")
         implementation(":app")

@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         lottieAnimation = findViewById(R.id.animation_view)
-        lottieAnimation?.speed  = 2.5f
+//        lottieAnimation?.speed  = 2.5f
 //        lottieAnimation?.pauseAnimation()
     }
 }
