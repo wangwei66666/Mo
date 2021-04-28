@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/margin_12"
     tools:context="com.ww.module_study.lifecycle.ProcessLifecycleOwnerActivity">
 
     <TextView

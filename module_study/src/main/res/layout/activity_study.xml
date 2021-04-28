@@ -32,5 +32,20 @@
             android:text="ProcessLifecycleOwner"
             android:textAllCaps="false" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="#f6f6f6" />
+
+        <Button
+            android:id="@+id/btn_viewmodel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lay_48"
+            android:text="ViewModel"
+            android:textAllCaps="false" />
+
+
     </LinearLayout>
 </ScrollView>

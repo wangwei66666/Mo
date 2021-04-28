@@ -5,7 +5,6 @@ import android.os.Process
 
 
 /*
- *  包名：    com.imooc.lib_base.utils
  *  文件名:   CommonUtils
  *  描述：    基础工具类
  */

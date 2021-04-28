@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
         binding.lottieAnimation.speed = 1.5f
         binding.btnJetpack.setOnClickListener {
             startActivity(Intent(this,StudyActivity::class.java))

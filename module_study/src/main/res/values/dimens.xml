@@ -2,5 +2,6 @@
 <resources>
     <dimen name="lay_48">48dp</dimen>
 
+    <dimen name="margin_8">8dp</dimen>
     <dimen name="margin_12">12dp</dimen>
 </resources>
