@@ -41,6 +41,8 @@ dependencies {
     api(DependenciesConfig.KTX_CORE)
     //Android标准库
     api(DependenciesConfig.APP_COMPAT)
+    //LifecycleService
+    api(DependenciesConfig.LIFECYCLE_SERVICE)
     //MATERIAL
     api(DependenciesConfig.MATERIAL)
     //约束布局

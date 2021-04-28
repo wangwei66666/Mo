@@ -38,6 +38,8 @@ object DependenciesConfig {
 
     //Android标准库
     const val APP_COMPAT = "androidx.appcompat:appcompat:1.2.0"
+    //LicycleService
+    const val LIFECYCLE_SERVICE="androidx.lifecycle:lifecycle-service:2.1.0"
 
     //material
     const val MATERIAL = "com.google.android.material:material:1.3.0"
@@ -65,11 +67,6 @@ object ModuleConfig{
 
     //包名
     const val MODULE_APP_MANAGER = "com.ww.mo.module_app_manager"
-    const val MODULE_CONSTELLATION = "com.ww.mo.module_constellation"
     const val MODULE_DEVELOPER = "com.ww.mo.module_developer"
-    const val MODULE_JOKE = "com.ww.mo.module_joke"
-    const val MODULE_MAP = "com.ww.mo.module_map"
     const val MODULE_SETTING = "com.ww.mo.module_setting"
-    const val MODULE_VOICE_SETTING = "com.ww.mo.module_voice_setting"
-    const val MODULE_WEATHER = "com.ww.mo.module_weather"
 }

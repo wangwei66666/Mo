@@ -4,5 +4,6 @@
 
     <application>
         <activity android:name=".StudyActivity" />
+        <activity android:name=".lifecycle.LifecycleActivity" />
     </application>
 </manifest>
