@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.ww.module_study.databinding.ActivityStudyBinding
 import com.ww.module_study.lifecycle.LifecycleActivity
+import com.ww.module_study.lifecycle.LocationServiceActivity
+import com.ww.module_study.lifecycle.ProcessLifecycleOwnerActivity
 
 /**
  * @author ww
@@ -20,11 +22,18 @@ class StudyActivity : AppCompatActivity() {
     }
 
     private fun initLisetner() {
+        //Activity LifecycleOwner
         binding.btnLifecycle.setOnClickListener {
             startActivity(Intent(this, LifecycleActivity::class.java))
         }
-        binding.btnLifecycleService.setOnClickListener { }
-        binding.btnProcessLifecycleOwner.setOnClickListener { }
+        //LifecycleService & Service LifecycleOwner
+        binding.btnLifecycleService.setOnClickListener {
+            startActivity(Intent(this, LocationServiceActivity::class.java))
+        }
+        //ProcessLifecycleOwner
+        binding.btnProcessLifecycleOwner.setOnClickListener {
+            startActivity(Intent(this, ProcessLifecycleOwnerActivity::class.java))
+        }
     }
 
 }

@@ -38,14 +38,18 @@ object DependenciesConfig {
 
     //Android标准库
     const val APP_COMPAT = "androidx.appcompat:appcompat:1.2.0"
-    //LicycleService
-    const val LIFECYCLE_SERVICE="androidx.lifecycle:lifecycle-service:2.1.0"
+
+    //实现Service的LifecycleOwner
+    const val LIFECYCLE_SERVICE = "androidx.lifecycle:lifecycle-service:2.2.0"
+
+    //ProcessLifecycleOwner给整个 app进程 提供一个lifecycle
+    const val LIFECYCLE_PROCESS = "androidx.lifecycle:lifecycle-process:2.2.0"
 
     //material
     const val MATERIAL = "com.google.android.material:material:1.3.0"
 
     //约束布局
-    const val CONSTRAINT_LAYOUT ="androidx.constraintlayout:constraintlayout:2.0.4"
+    const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.0.4"
 
     //EventBus
     const val EVENT_BUS = "org.greenrobot:eventbus:3.2.0"
@@ -60,10 +64,10 @@ object DependenciesConfig {
 }
 
 //Module配置
-object ModuleConfig{
+object ModuleConfig {
 
     //是否App
-     var isApp = false
+    var isApp = false
 
     //包名
     const val MODULE_APP_MANAGER = "com.ww.mo.module_app_manager"

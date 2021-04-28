@@ -29,7 +29,7 @@
             android:id="@+id/btn_process_lifecycle_owner"
             android:layout_width="match_parent"
             android:layout_height="@dimen/lay_48"
-            android:text="LifecycleOwner"
+            android:text="ProcessLifecycleOwner"
             android:textAllCaps="false" />
 
     </LinearLayout>

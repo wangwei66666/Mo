@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ww.module_study">
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <application>
         <activity android:name=".StudyActivity" />
         <activity android:name=".lifecycle.LifecycleActivity" />
+        <activity android:name=".lifecycle.LocationServiceActivity" />
+        <activity android:name=".lifecycle.ProcessLifecycleOwnerActivity" />
+
+        <service android:name=".lifecycle.service.LocationService" />
     </application>
 </manifest>

@@ -1,5 +1,5 @@
 plugins {
-    id ("com.android.library")
+    id("com.android.library")
     kotlin("android")
 }
 
@@ -7,8 +7,8 @@ android {
     compileSdkVersion(AppConfig.compileSdkVersion)
 
     defaultConfig {
-        minSdkVersion (AppConfig.minSdkVersion)
-        targetSdkVersion (AppConfig.targetSdkVersion)
+        minSdkVersion(AppConfig.minSdkVersion)
+        targetSdkVersion(AppConfig.targetSdkVersion)
         versionCode = AppConfig.versionCode
         versionName = AppConfig.versionName
         consumerProguardFiles("consumer-rules.pro")
@@ -41,8 +41,10 @@ dependencies {
     api(DependenciesConfig.KTX_CORE)
     //Android标准库
     api(DependenciesConfig.APP_COMPAT)
-    //LifecycleService
+    //实现Service的LifecycleOwner
     api(DependenciesConfig.LIFECYCLE_SERVICE)
+    //ProcessLifecycleOwner给整个 app进程 提供一个lifecycle
+    api(DependenciesConfig.LIFECYCLE_PROCESS)
     //MATERIAL
     api(DependenciesConfig.MATERIAL)
     //约束布局
@@ -54,5 +56,5 @@ dependencies {
     //LOTTIE
     api(DependenciesConfig.LOTTIE)
 
-    api (project(":lib_network"))
+    api(project(":lib_network"))
 }
