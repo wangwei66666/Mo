@@ -44,6 +44,8 @@ object DependenciesConfig {
 
     //ProcessLifecycleOwner给整个 app进程 提供一个lifecycle
     const val LIFECYCLE_PROCESS = "androidx.lifecycle:lifecycle-process:2.2.0"
+    //ViewModel
+    const val LIFECYCLE_EXTENSIONS = "androidx.lifecycle:lifecycle-extensions:2.2.0"
 
     //material
     const val MATERIAL = "com.google.android.material:material:1.3.0"

@@ -8,6 +8,7 @@
         <activity android:name=".lifecycle.LifecycleActivity" />
         <activity android:name=".lifecycle.LocationServiceActivity" />
         <activity android:name=".lifecycle.ProcessLifecycleOwnerActivity" />
+        <activity android:name=".viewmodel.ViewModeActivity" />
 
         <service android:name=".lifecycle.service.LocationService" />
     </application>

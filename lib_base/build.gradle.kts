@@ -45,6 +45,8 @@ dependencies {
     api(DependenciesConfig.LIFECYCLE_SERVICE)
     //ProcessLifecycleOwner给整个 app进程 提供一个lifecycle
     api(DependenciesConfig.LIFECYCLE_PROCESS)
+    //ViewModel
+    api(DependenciesConfig.LIFECYCLE_EXTENSIONS)
     //MATERIAL
     api(DependenciesConfig.MATERIAL)
     //约束布局

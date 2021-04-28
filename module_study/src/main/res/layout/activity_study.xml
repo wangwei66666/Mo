@@ -37,7 +37,7 @@
             android:layout_height="1px"
             android:layout_marginTop="@dimen/margin_8"
             android:layout_marginBottom="@dimen/margin_8"
-            android:background="#f6f6f6" />
+            android:background="@color/purple_500" />
 
         <Button
             android:id="@+id/btn_viewmodel"
