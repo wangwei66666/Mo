@@ -34,7 +34,11 @@
 
   ![image.png](https://upload-images.jianshu.io/upload_images/2194177-7ca0f164331bdb31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/310)
 
-  > 不要向ViewModel中传入Context，会导致内存泄漏。如果要使用Context,请使用AndroidViewMode中的Application
+  > 不要向ViewModel中传入Context，会导致内存泄漏；
+  >
+  > 如果要使用Context,请使用AndroidViewMode中的Application；
+  >
+  > 存储数据使用ViewModel(handle: SavedStateHandle)，替代activity重的onSaveInstanceState
 
   - 作用与应用
 
