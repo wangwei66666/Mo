@@ -21,7 +21,7 @@ class DataBinding1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        binding.user = User("小茉茉", (Math.random()*5+1).roundToInt())
+        binding.user = User("机器人", (Math.random()*5+1).roundToInt())
     }
 
 }
