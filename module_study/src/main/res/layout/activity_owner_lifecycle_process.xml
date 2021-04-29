@@ -13,6 +13,7 @@
         android:text="ProcessLifecycleOwner监听应用程序生命周期。
 \n针对整个应用程序的监听，与Activity数量 无关。
 \nLifecycle.Event.ON CREATE只会被调用一次，Lifecycle.Event.ON DESTROY永远不会被调用。
+\n  ProcessLifecycleOwner.get().lifecycle.addObserver(XXLifecycleObserver())
 \n如果多进程可用ActivityLifecycleCallbacks"
         android:textAllCaps="false" />
 </FrameLayout>
