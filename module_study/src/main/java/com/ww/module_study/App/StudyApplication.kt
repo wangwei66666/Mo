@@ -1,4 +1,4 @@
-package com.ww.module_study.lifecycle.App
+package com.ww.module_study.App
 
 import android.app.Application
 import androidx.lifecycle.ProcessLifecycleOwner

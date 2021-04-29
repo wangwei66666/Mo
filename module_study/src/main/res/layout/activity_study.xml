@@ -46,6 +46,25 @@
             android:text="ViewModel"
             android:textAllCaps="false" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@color/purple_500" />
 
+        <Button
+            android:id="@+id/btn_livedata1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lay_48"
+            android:text="LiveData1"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_livedata2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lay_48"
+            android:text="LiveData2"
+            android:textAllCaps="false" />
     </LinearLayout>
 </ScrollView>

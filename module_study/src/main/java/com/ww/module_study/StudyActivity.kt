@@ -7,6 +7,8 @@ import com.ww.module_study.databinding.ActivityStudyBinding
 import com.ww.module_study.lifecycle.LifecycleActivity
 import com.ww.module_study.lifecycle.LocationServiceActivity
 import com.ww.module_study.lifecycle.ProcessLifecycleOwnerActivity
+import com.ww.module_study.livedata.LiveData1Activity
+import com.ww.module_study.livedata.LiveData2Activity
 import com.ww.module_study.viewmodel.ViewModeActivity
 
 /**
@@ -35,9 +37,17 @@ class StudyActivity : AppCompatActivity() {
         binding.btnProcessLifecycleOwner.setOnClickListener {
             startActivity(Intent(this, ProcessLifecycleOwnerActivity::class.java))
         }
-
-        binding.btnViewmodel.setOnClickListener{
+        //ViewModel
+        binding.btnViewmodel.setOnClickListener {
             startActivity(Intent(this, ViewModeActivity::class.java))
+        }
+        //LiveData1
+        binding.btnLivedata1.setOnClickListener {
+            startActivity(Intent(this, LiveData1Activity::class.java))
+        }
+        //LiveData2
+        binding.btnLivedata2.setOnClickListener {
+            startActivity(Intent(this, LiveData2Activity::class.java))
         }
     }
 
