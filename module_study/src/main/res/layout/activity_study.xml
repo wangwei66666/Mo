@@ -13,58 +13,48 @@
 
         <Button
             android:id="@+id/btn_lifecycle"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/lay_48"
-            android:text="Lifecycle"
-            android:textAllCaps="false" />
+            style="@style/btn_48"
+            android:text="Lifecycle" />
 
         <Button
             android:id="@+id/btn_lifecycle_service"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/lay_48"
-            android:text="LifecycleService"
-            android:textAllCaps="false" />
+            style="@style/btn_48"
+            android:text="LifecycleService" />
 
         <Button
             android:id="@+id/btn_process_lifecycle_owner"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/lay_48"
-            android:text="ProcessLifecycleOwner"
-            android:textAllCaps="false" />
+            style="@style/btn_48"
+            android:text="ProcessLifecycleOwner" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_marginTop="@dimen/margin_8"
-            android:layout_marginBottom="@dimen/margin_8"
-            android:background="@color/purple_500" />
+        <View style="@style/line" />
 
         <Button
             android:id="@+id/btn_viewmodel"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/lay_48"
-            android:text="ViewModel"
-            android:textAllCaps="false" />
+            style="@style/btn_48"
+            android:text="ViewModel" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_marginTop="@dimen/margin_8"
-            android:layout_marginBottom="@dimen/margin_8"
-            android:background="@color/purple_500" />
+        <View style="@style/line" />
 
         <Button
             android:id="@+id/btn_livedata1"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/lay_48"
-            android:text="LiveData1"
-            android:textAllCaps="false" />
+            style="@style/btn_48"
+            android:text="LiveData1" />
 
         <Button
             android:id="@+id/btn_livedata2"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/lay_48"
-            android:text="LiveData2"
-            android:textAllCaps="false" />
+            style="@style/btn_48"
+            android:text="LiveData2" />
+
+        <View style="@style/line" />
+
+        <Button
+            android:id="@+id/btn_databinding1"
+            style="@style/btn_48"
+            android:text="DataBinding1" />
+
+        <Button
+            android:id="@+id/btn_databinding2"
+            style="@style/btn_48"
+            android:text="DataBinding2" />
     </LinearLayout>
 </ScrollView>

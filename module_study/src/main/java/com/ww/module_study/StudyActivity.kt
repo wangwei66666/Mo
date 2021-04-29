@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.ww.module_study.databinding.ActivityStudyBinding
+import com.ww.module_study.databinding.DataBinding1Activity
+import com.ww.module_study.databinding.DataBinding2Activity
 import com.ww.module_study.lifecycle.LifecycleActivity
 import com.ww.module_study.lifecycle.LocationServiceActivity
 import com.ww.module_study.lifecycle.ProcessLifecycleOwnerActivity
@@ -48,6 +50,14 @@ class StudyActivity : AppCompatActivity() {
         //LiveData2
         binding.btnLivedata2.setOnClickListener {
             startActivity(Intent(this, LiveData2Activity::class.java))
+        }
+        //DataBinding1
+        binding.btnDatabinding1.setOnClickListener {
+            startActivity(Intent(this, DataBinding1Activity::class.java))
+        }
+        //DataBinding2
+        binding.btnDatabinding2.setOnClickListener {
+            startActivity(Intent(this, DataBinding2Activity::class.java))
         }
     }
 
