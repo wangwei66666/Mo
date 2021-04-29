@@ -63,6 +63,11 @@ object DependenciesConfig {
     const val AROUTER = "com.alibaba:arouter-api:1.5.1"
     const val AROUTER_COMPILER = "com.alibaba:arouter-compiler:1.5.1"
 
+    //PICASSO
+    const val PICASSO = "com.squareup.picasso:picasso:2.71828"
+
+
+
 }
 
 //Module配置

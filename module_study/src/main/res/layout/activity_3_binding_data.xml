@@ -6,6 +6,14 @@
     <data>
 
         <variable
+            name="netImgae"
+            type="String" />
+
+        <variable
+            name="localImgae"
+            type="int" />
+
+        <variable
             name="user"
             type="com.ww.module_study.databinding.bean.User" />
 
@@ -28,25 +36,47 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.5" />
 
-        <ImageView
-            android:id="@+id/iv_portrait"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:src="@drawable/ic_zhm_pic"
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:image="@{netImgae}"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:image="@{localImgae}"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:defaultImage="@{localImgae}"
+                app:image="@{netImgae}"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
 
         <include
             layout="@layout/layout_user_data"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            app:eventHandle="@{eventHandle}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/guideline3"
-            app:eventHandle="@{eventHandle}"
             app:user="@{user}" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -57,6 +57,8 @@ dependencies {
     api(DependenciesConfig.AROUTER)
     //LOTTIE
     api(DependenciesConfig.LOTTIE)
+    //PICASSO
+    api(DependenciesConfig.PICASSO)
 
     api(project(":lib_network"))
 }
