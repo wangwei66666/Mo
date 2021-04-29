@@ -50,11 +50,26 @@
         <Button
             android:id="@+id/btn_databinding1"
             style="@style/btn_48"
-            android:text="DataBinding1" />
+            android:text="DataBinding 标签" />
 
         <Button
             android:id="@+id/btn_databinding2"
             style="@style/btn_48"
-            android:text="DataBinding2" />
+            android:text="DataBinding 事件绑定、二级页面" />
+
+        <Button
+            android:id="@+id/btn_databinding3"
+            style="@style/btn_48"
+            android:text="DataBinding BingAdapter" />
+
+        <Button
+            android:id="@+id/btn_databinding4"
+            style="@style/btn_48"
+            android:text="DataBinding4" />
+
+        <Button
+            android:id="@+id/btn_databinding5"
+            style="@style/btn_48"
+            android:text="DataBinding5" />
     </LinearLayout>
 </ScrollView>

@@ -13,6 +13,9 @@
         <activity android:name=".livedata.LiveData2Activity" />
         <activity android:name=".databinding.DataBinding1Activity" />
         <activity android:name=".databinding.DataBinding2Activity" />
+        <activity android:name=".databinding.DataBinding3Activity" />
+        <activity android:name=".databinding.DataBinding4Activity" />
+        <activity android:name=".databinding.DataBinding5Activity" />
 
         <service android:name=".lifecycle.service.LocationService" />
     </application>
