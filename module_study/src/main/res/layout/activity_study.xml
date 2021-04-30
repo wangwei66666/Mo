@@ -65,6 +65,7 @@
         <Button
             android:id="@+id/btn_databinding4"
             style="@style/btn_48"
+            android:layout_height="@dimen/margin_56"
             android:text="DataBinding 双向绑定BaseObservable与ObservableField" />
 
         <Button

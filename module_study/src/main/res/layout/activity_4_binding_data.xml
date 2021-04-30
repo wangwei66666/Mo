@@ -8,6 +8,10 @@
         <variable
             name="base_observerable_user"
             type="com.ww.module_study.databinding.viewmodel.BaseObservableUser" />
+
+        <variable
+            name="observerable_field_user"
+            type="com.ww.module_study.databinding.viewmodel.ObservableFieldUser" />
     </data>
 
     <LinearLayout
@@ -51,6 +55,7 @@
                 android:textAllCaps="false" />
 
             <EditText
+                android:text="@={observerable_field_user.name}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
