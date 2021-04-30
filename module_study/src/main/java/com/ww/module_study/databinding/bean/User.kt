@@ -5,6 +5,6 @@ package com.ww.module_study.databinding.bean
  * @date 4/29/21.
  * description：
  */
-class User(var name: String, var star: Int) {
+class User(var name: String, var star: Int=0) {
 
 }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.ww.module_study.databinding.bean.User
 import com.ww.module_study.databinding.handle.EventHandleListener
+import com.ww.module_study.databinding.viewmodel.BaseObservableUser
 import kotlin.math.roundToInt
 
 /**
@@ -21,8 +22,8 @@ class DataBinding4Activity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        binding.user = User("明星", (Math.random()*5+1).roundToInt())
-        binding.eventHandle = EventHandleListener(this)
+
+        binding.baseObserverableUser = BaseObservableUser()
     }
 
 }
