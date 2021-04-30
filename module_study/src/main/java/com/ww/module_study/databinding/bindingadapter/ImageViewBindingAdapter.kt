@@ -30,7 +30,8 @@ object ImageViewBindingAdapter {
         iv.setImageResource(resId)
     }
 
-    @BindingAdapter("image", "defaultImage", requireAll = false)
+    @BindingAdapter(value = ["image", "defaultImage"], requireAll = false)
+//    @BindingAdapter("image", "defaultImage", requireAll = false)
     @JvmStatic
     fun setImage(iv: ImageView, url: String, resId: Int) {
         if (!TextUtils.isEmpty(url)) {
