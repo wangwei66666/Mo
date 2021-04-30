@@ -45,6 +45,7 @@
             tools:text="star" />
 
         <Button
+            android:id="@+id/btn_handle"
             style="@style/btn_48"
             android:layout_marginTop="@dimen/margin_24"
             android:onClick="@{eventHandle.btnOnClick}"
@@ -52,5 +53,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_star" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12"
+            android:lineSpacingMultiplier="1.2"
+            android:text="报错：java.lang.IllegalStateException: Required DataBindingComponent is null in class...
+            \n解决办法：setDefaultComponent或者让所有BindingAdapter方法都是静态的。
+            \n加@JvmStatic"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_handle" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

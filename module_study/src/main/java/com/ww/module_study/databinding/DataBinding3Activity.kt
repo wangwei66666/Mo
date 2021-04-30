@@ -10,7 +10,8 @@ import kotlin.math.roundToInt
 /**
  * @author ww
  * @date 4/29/21.
- * description：
+ * description：使用dataBinding展示图片
+ * 问题解决：
  * https://blog.csdn.net/jie1123161402/article/details/81736677
  */
 class DataBinding3Activity : AppCompatActivity() {
